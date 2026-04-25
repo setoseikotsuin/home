@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>保険・交通事故治療 | 瀬戸整骨院</title>
+    <style>
+        /* --- 共通スタイル（省略せず記述） --- */
+        :root {
+            --primary-color: #2e8b57;
+            --secondary-color: #f0fdf4;
+            --accent-color: #f97316;
+            --line-color: #00B900;
+            --text-main: #333333;
+            --bg-light: #f9fafb;
+        }
+        body { font-family: 'Helvetica Neue', Arial, sans-serif; color: var(--text-main); line-height: 1.6; margin: 0; background-color: var(--bg-light); font-size: 16px; }
+        h1, h2, h3, p { margin: 0; padding: 0; }
+        a { text-decoration: none; color: inherit; }
+        .container { max-width: 1000px; margin: 0 auto; padding: 0 20px; }
+
+        header { background-color: #ffffff; box-shadow: 0 2px 4px rgba(0,0,0,0.1); position: sticky; top: 0; z-index: 100; }
+        .header-inner { display: flex; justify-content: space-between; align-items: center; padding: 15px 20px; }
+        .logo { font-size: 1.5rem; font-weight: bold; color: var(--primary-color); }
+        .global-nav ul { display: flex; list-style: none; gap: 20px; margin: 0; padding: 0; }
+        .global-nav a { font-weight: bold; color: var(--text-main); font-size: 0.95rem; }
+        .global-nav a:hover { color: var(--primary-color); }
+
+        .page-header { background-color: var(--primary-color); color: white; text-align: center; padding: 40px 20px; margin-bottom: 20px; }
+        .page-header h1 { font-size: 1.8rem; }
+        .section { padding: 40px 0; }
+        
+        /* 保険専用スタイル */
+        .insurance-box {
+            background-color: #fff3cd; border: 1px solid #ffe69c; padding: 30px; border-radius: 8px; margin-bottom: 30px;
+        }
+        .insurance-box h3 { color: #856404; margin-bottom: 15px; font-size: 1.3rem; }
+        .traffic-box {
+            background-color: #e6f2ff; border: 1px solid #b8daff; padding: 30px; border-radius: 8px;
+        }
+        .traffic-box h3 { color: #004085; margin-bottom: 15px; font-size: 1.3rem; }
+
+        /* フッター周辺共通 */
+        .reservation-area { background-color: #ffffff; padding: 40px 20px; text-align: center; margin-top: 40px; }
+        .btn-group { display: flex; justify-content: center; gap: 20px; margin-top: 20px; }
+        .btn { display: inline-block; padding: 15px 40px; font-size: 1.2rem; font-weight: bold; border-radius: 50px; color: #ffffff; width: 250px; box-sizing: border-box; }
+        .btn-web { background-color: var(--accent-color); }
+        .btn-line { background-color: var(--line-color); }
+        .info-container { display: flex; flex-wrap: wrap; gap: 40px; background-color: #ffffff; padding: 40px; border-radius: 8px; }
+        .schedule, .access { flex: 1; min-width: 300px; }
+        .schedule table { width: 100%; border-collapse: collapse; text-align: center; margin-top: 20px; }
+        .schedule th, .schedule td { border: 1px solid #e5e7eb; padding: 12px; }
+        .schedule th { background-color: var(--secondary-color); color: var(--primary-color); }
+        .map-wrapper { margin-top: 20px; width: 100%; height: 250px; background-color: #e5e7eb; border-radius: 8px; }
+        footer { background-color: var(--primary-color); color: #ffffff; text-align: center; padding: 30px 20px; margin-top: 40px; }
+        
+        @media (max-width: 768px) {
+            .global-nav { display: none; }
+            .btn-group { flex-direction: column; align-items: center; }
+            .btn { width: 100%; max-width: 300px; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="header-inner container">
+            <div class="logo"><a href="index.html">瀬戸整骨院</a></div>
+            <nav class="global-nav">
+                <ul>
+                    <li><a href="index.html">トップ</a></li>
+                    <li><a href="symptoms.html">施術・症状</a></li>
+                    <li><a href="insurance.html">保険・交通事故</a></li>
+                    <li><a href="faq.html">よくある質問</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="page-header">
+        <div class="container">
+            <h1>保険診療・交通事故治療</h1>
+        </div>
+    </div>
+
+    <section class="section container">
+        <div class="insurance-box">
+            <h3>■ 各種健康保険の適用について</h3>
+            <p style="margin-bottom: 15px;">骨折、脱臼、打撲、捻挫、挫傷（肉離れ）など、原因がはっきりしている急性のケガには健康保険が適用されます。ご来院の際は必ず保険証をお持ちください。</p>
+            <p style="font-size: 0.9rem; color: #666;">※慢性的な肩こりや腰痛、慰安目的のマッサージには健康保険は適用されません（自費診療となります）。</p>
+        </div>
+        <div class="traffic-box">
+            <h3>■ 交通事故・労災治療（自己負担0円）</h3>
+            <p>むち打ちなど、交通事故によるケガの治療は自賠責保険が適用され、患者様の窓口負担は原則0円です。<br>
+            保険会社とのやり取りのアドバイスや、整形外科との併院も可能です。お早めにご相談ください。</p>
+        </div>
+    </section>
+
+    <!-- 予約エリア -->
+    <section class="reservation-area">
+        <div class="container">
+            <h2 style="font-size: 1.5rem; margin-bottom: 10px;">ご予約・お問い合わせはこちら</h2>
+            <div class="btn-group">
+                <a href="#" class="btn btn-web">Webで予約する</a>
+                <a href="#" class="btn btn-line">LINEで予約・相談</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 診療時間・アクセス -->
+    <section class="section container">
+        <div class="info-container">
+            <div class="schedule">
+                <h3 style="color: var(--primary-color);">診療時間</h3>
+                <table>
+                    <tr><th>受付時間</th><th>月</th><th>火</th><th>水</th><th>木</th><th>金</th><th>土</th><th>日</th></tr>
+                    <tr><td>9:00 - 12:30</td><td>〇</td><td>〇</td><td>〇</td><td>休</td><td>〇</td><td>〇</td><td>休</td></tr>
+                    <tr><td>15:00 - 20:00</td><td>〇</td><td>〇</td><td>〇</td><td>休</td><td>〇</td><td>△</td><td>休</td></tr>
+                </table>
+            </div>
+            <div class="access">
+                <h3 style="color: var(--primary-color);">アクセス</h3>
+                <p style="margin-top: 10px;">〒XXX-XXXX 埼玉県草加市〇〇〇〇</p>
+                <div class="map-wrapper">[ Google Maps 埋め込みエリア ]</div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container"><p>&copy; 2026 瀬戸整骨院 All Rights Reserved.</p></div>
+    </footer>
+
+</body>
+</html>
